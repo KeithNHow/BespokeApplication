@@ -26,11 +26,11 @@ report 69000 SMPSalesInvoiceImport
         SalesHeader: Record "Sales Header";
         SalesLine: Record "Sales Line";
         LineNo: Integer;
+        ExcelImportSuccessMsg: Label 'Excel records have been successfully imported.';
+        NoFileFoundMsg: Label 'No Excel file found!';
+        UploadExcelMsg: Label 'Please Choose the Excel file.';
         FileName: Text;
         SheetName: Text;
-        UploadExcelMsg: Label 'Please Choose the Excel file.';
-        NoFileFoundMsg: Label 'No Excel file found!';
-        ExcelImportSuccessMsg: Label 'Excel records have been successfully imported.';
         PostingDescription: Text[100];
 
     local procedure ReadExcelSheet()
@@ -53,8 +53,8 @@ report 69000 SMPSalesInvoiceImport
 
     local procedure ImportExcelData()
     var
-        RowNo: Integer;
         MaxRowNo: Integer;
+        RowNo: Integer;
     begin
         RowNo := 0;
         MaxRowNo := 0;
@@ -63,7 +63,7 @@ report 69000 SMPSalesInvoiceImport
         if this.TempExcelBuffer.FindLast() then
             MaxRowNo := this.TempExcelBuffer."Row No.";
         for RowNo := 2 to MaxRowNo do
-            this.CreateInvoice(RowNo);
+            this.createInvoice(RowNo);
         Message(this.ExcelImportSuccessMsg);
     end;
 

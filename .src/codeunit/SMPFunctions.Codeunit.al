@@ -9,6 +9,6 @@ codeunit 69000 SMPFunctions
         CommentLine.SetRange("Table Name", CommentLine."Table Name"::Vendor);
         CommentLine.SetRange("No.", VendorNo);
         if CommentLine.FindLast() then
-            LastComment := CommentLine."Comment";
+            LastComment := CommentLine.Comment;
     end;
 }

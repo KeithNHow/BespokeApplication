@@ -1,8 +1,8 @@
 namespace SMP;
-using Microsoft.Purchases.vendor;
+using Microsoft.Purchases.Vendor;
 using Microsoft.Foundation.Comment;
 
-tableextension 69001 SMPVendor extends vendor
+tableextension 69001 SMPVendor extends Vendor
 {
     fields
     {
@@ -12,7 +12,7 @@ tableextension 69001 SMPVendor extends vendor
             AllowInCustomizations = AsReadWrite;
             CalcFormula = count("Comment Line" where("Table Name" = const(Vendor),
                                                       "No." = field("No.")));
-            FieldClass = Flowfield;
+            FieldClass = FlowField;
             Editable = false;
             ToolTip = 'Specifies whether the vendor has comments.';
         }

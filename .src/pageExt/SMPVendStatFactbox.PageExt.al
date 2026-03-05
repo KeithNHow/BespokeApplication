@@ -2,7 +2,7 @@ pageextension 69004 SMPVendStatFactbox extends "Vendor Statistics FactBox"
 {
     layout
     {
-        addafter("BalanceAsCustomer")
+        addafter(BalanceAsCustomer)
         {
             field("Comment Count"; Rec."SMP Comment Count")
             {

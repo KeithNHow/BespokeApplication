@@ -12,6 +12,7 @@ pageextension 69003 SMPVendorCard extends "Vendor Card"
                 ApplicationArea = Basic, Suite;
                 Importance = Standard;
                 CaptionML = ENU = 'Salutation', DEU = 'Anrede';
+                ToolTip = 'Specifies the value of the SMP Salutation field.';
             }
             field("Last Comment"; LastComment)
             {
@@ -23,18 +24,19 @@ pageextension 69003 SMPVendorCard extends "Vendor Card"
                 ToolTip = 'Specifies the last comment added for the vendor.';
             }
         }
-        addbefore("Address")
+        addbefore(Address)
         {
             field("House No."; Rec."SMP House No.")
             {
                 ApplicationArea = Basic, Suite;
                 Importance = Standard;
                 CaptionML = ENU = 'House No.', DEU = 'Hausnummer';
+                ToolTip = 'Specifies the value of the SMP House No. field.';
             }
         }
     }
 
-    trigger OnafterGetCurrRecord()
+    trigger OnAfterGetCurrRecord()
     var
         SMPFunctions: Codeunit SMPFunctions;
     begin
