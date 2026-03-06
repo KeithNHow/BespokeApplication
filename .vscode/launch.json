@@ -1,19 +1,17 @@
 {
-    "version": "0.2.0",
+   "version": "0.2.0",
     "configurations": [
         {
             "name": "Microsoft Sandbox",
             "request": "launch",
             "type": "al",
             "environmentType": "Sandbox",
-            "environmentName": "SandBoxGE_SMP_Dev",
-            "startupObjectId": 2500,
-            "startupObjectType": "Page",
+            "environmentName": "Sandbox",
             "breakOnError": "All",
             "launchBrowser": true,
             "enableLongRunningSqlStatements": true,
             "enableSqlInformationDebugger": true,
-            "tenant": "66c65d8a-9158-4521-a2d8-664963db48e4",
+            "tenant": "4a94f826-0a72-47e5-869d-d554fa01b7ec",
             "schemaUpdateMode": "Synchronize"
         }
     ]
