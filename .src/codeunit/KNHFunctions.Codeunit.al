@@ -1,4 +1,4 @@
-codeunit 69000 SMPFunctions
+codeunit 69000 KNHFunctions
 {
     procedure SMPCommentCount(VendorNo: Code[20]) LastComment: Text[80]
     var

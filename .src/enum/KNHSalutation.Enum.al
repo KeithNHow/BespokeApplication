@@ -1,6 +1,6 @@
 namespace SMP;
 
-enum 69000 SMPSalutation
+enum 69000 KNHSalutation
 {
     Extensible = true;
 

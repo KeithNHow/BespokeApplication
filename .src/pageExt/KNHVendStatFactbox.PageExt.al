@@ -1,10 +1,10 @@
-pageextension 69004 SMPVendStatFactbox extends "Vendor Statistics FactBox"
+pageextension 69004 KNHVendStatFactbox extends "Vendor Statistics FactBox"
 {
     layout
     {
         addafter(BalanceAsCustomer)
         {
-            field("Comment Count"; Rec."SMP Comment Count")
+            field("Comment Count"; Rec."KNH Comment Count")
             {
                 ApplicationArea = Basic, Suite;
                 Editable = false;

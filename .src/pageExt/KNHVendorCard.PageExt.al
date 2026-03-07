@@ -1,13 +1,13 @@
 namespace SMP;
 using Microsoft.Purchases.Vendor;
 
-pageextension 69003 SMPVendorCard extends "Vendor Card"
+pageextension 69003 KNHVendorCard extends "Vendor Card"
 {
     layout
     {
         addlast(General)
         {
-            field(Salutation; Rec."SMP Salutation")
+            field(Salutation; Rec."KNH Salutation")
             {
                 ApplicationArea = Basic, Suite;
                 Importance = Standard;
@@ -26,7 +26,7 @@ pageextension 69003 SMPVendorCard extends "Vendor Card"
         }
         addbefore(Address)
         {
-            field("House No."; Rec."SMP House No.")
+            field("House No."; Rec."KNH House No.")
             {
                 ApplicationArea = Basic, Suite;
                 Importance = Standard;
@@ -38,7 +38,7 @@ pageextension 69003 SMPVendorCard extends "Vendor Card"
 
     trigger OnAfterGetCurrRecord()
     var
-        SMPFunctions: Codeunit SMPFunctions;
+        SMPFunctions: Codeunit KNHFunctions;
     begin
         LastComment := SMPFunctions.SMPCommentCount(Rec."No.");
     end;

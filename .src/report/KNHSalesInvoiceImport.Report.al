@@ -2,7 +2,7 @@ namespace SMP;
 using System.IO;
 using Microsoft.Sales.Document;
 
-report 69000 SMPSalesInvoiceImport
+report 69000 KNHSalesInvoiceImport
 {
     /*Summary
         This report is used to import sales records from an excel file.

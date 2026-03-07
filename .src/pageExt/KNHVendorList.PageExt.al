@@ -1,13 +1,13 @@
 namespace SMP;
 using Microsoft.Purchases.Vendor;
 
-pageextension 69005 SMPVendorList extends "Vendor List"
+pageextension 69005 KNHVendorList extends "Vendor List"
 {
     layout
     {
         addafter("Phone No.")
         {
-            field("Comment Count"; Rec."SMP Comment Count")
+            field("Comment Count"; Rec."KNH Comment Count")
             {
                 ApplicationArea = Basic, Suite;
                 Importance = Standard;
@@ -26,7 +26,7 @@ pageextension 69005 SMPVendorList extends "Vendor List"
 
     trigger OnAfterGetRecord()
     var
-        SMPFunctions: Codeunit SMPFunctions;
+        SMPFunctions: Codeunit KNHFunctions;
     begin
         LastComment := SMPFunctions.SMPCommentCount(Rec."No.");
     end;
