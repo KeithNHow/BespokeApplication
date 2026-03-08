@@ -1,4 +1,4 @@
-namespace SMP;
+namespace KNHBespoke;
 using Microsoft.Purchases.Vendor;
 using Microsoft.Foundation.Comment;
 

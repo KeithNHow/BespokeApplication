@@ -1,4 +1,4 @@
-namespace SMP;
+namespace KNHBespoke;
 using Microsoft.Purchases.Vendor;
 
 pageextension 69003 KNHVendorCard extends "Vendor Card"

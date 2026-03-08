@@ -1,9 +1,9 @@
 /*
-namespace KNHGenDev;
+namespace KNHBespoke;
 using Microsoft.Purchases.Vendor;
 using Microsoft.Foundation.Comment;
 
-report 69001 SMPVendorComment
+report 69001 KNHVendorComment
 {
     ApplicationArea = Basic, Suite;
     UsageCategory = ReportsAndAnalysis;

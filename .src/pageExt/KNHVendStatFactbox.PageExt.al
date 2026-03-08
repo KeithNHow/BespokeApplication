@@ -1,3 +1,6 @@
+namespace KNHBespoke;
+using Microsoft.Purchases.Vendor;
+
 pageextension 69004 KNHVendStatFactbox extends "Vendor Statistics FactBox"
 {
     layout

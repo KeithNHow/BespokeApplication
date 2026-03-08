@@ -1,7 +1,8 @@
 # Summary
-49780 New Vendor fields
-48724 Sales Invoice Import from Excel
-44050 Vendor Comments
+Vendor Comments
+Sales Invoice Import from Excel
+New Vendor fields
+German Captions
 
 # Vendor Comments - 20/02/2026 - 27.0.0.0
 tableExt - SMPVendor - "Comment Count"
@@ -20,6 +21,6 @@ enum - SMPSalutation
 pageExt - SMPVendorCard - GenTab "Salutation", AddrTab "House No."
 tableExt - SMPVendor - "Salutation", "House No."
 
-# 01/03/2026 - 27.0.0.1
+# German Captions - 01/03/2026 - 27.0.0.1
 German captions added to enum - SMPSalutation, tableExt - SMPVendor, pageExt - SMPVendorCard
 pageExt - SMPVendorList, pageExt - SMPVendStatFactbox

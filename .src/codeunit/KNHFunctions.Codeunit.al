@@ -1,3 +1,6 @@
+namespace KNHBespoke;
+using Microsoft.Foundation.Comment;
+
 codeunit 69000 KNHFunctions
 {
     procedure SMPCommentCount(VendorNo: Code[20]) LastComment: Text[80]

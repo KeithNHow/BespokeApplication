@@ -1,4 +1,4 @@
-namespace SMP;
+namespace KNHBespoke;
 
 enum 69000 KNHSalutation
 {
