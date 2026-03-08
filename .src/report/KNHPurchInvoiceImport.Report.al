@@ -76,14 +76,14 @@ report 69002 KNHPurchInvoiceImport
 
     local procedure CreateInvoice(ColumnNo: Integer)
     begin
-        if this.PurchHeader."Sell-to Customer No." <> this.GetValueAtCell(ColumnNo, 2) then begin
+        if this.PurchHeader."Vendor Invoice No." <> this.GetValueAtCell(ColumnNo, 8) then begin
             Clear(this.PurchHeader);
             this.LineNo := 0;
             this.PurchHeader.Init();
             this.PurchHeader.Validate("Document Type", this.PurchHeader."Document Type"::Invoice);
             this.PurchHeader.InitInsert();
-            Evaluate(this.PurchHeader."Sell-to Customer No.", this.GetValueAtCell(ColumnNo, 2));
-            this.PurchHeader.Validate("Sell-to Customer No.");
+            Evaluate(this.PurchHeader."Buy-from Vendor No.", this.GetValueAtCell(ColumnNo, 2));
+            this.PurchHeader.Validate("Buy-from Vendor No.");
             Evaluate(this.PurchHeader."Posting Date", this.GetValueAtCell(ColumnNo, 5));
             this.PurchHeader.Validate("Posting Date");
             Evaluate(this.PurchHeader."Document Date", this.GetValueAtCell(ColumnNo, 6));

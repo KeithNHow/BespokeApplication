@@ -76,7 +76,7 @@ report 69000 KNHSalesInvoiceImport
 
     local procedure CreateInvoice(ColumnNo: Integer)
     begin
-        if this.SalesHeader."Sell-to Customer No." <> this.GetValueAtCell(ColumnNo, 2) then begin
+        if this.SalesHeader."External Document No." <> this.GetValueAtCell(ColumnNo, 8) then begin
             Clear(this.SalesHeader);
             this.LineNo := 0;
             this.SalesHeader.Init();
