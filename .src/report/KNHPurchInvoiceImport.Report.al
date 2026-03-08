@@ -38,7 +38,7 @@ report 69002 KNHPurchInvoiceImport
         IStream: InStream;
         FromFile: Text;
     begin
-        UploadIntoStream(UploadExcelMsg, '', '', FromFile, IStream);
+        UploadIntoStream(this.UploadExcelMsg, '', '', FromFile, IStream);
         if FromFile <> '' then begin
             this.FileName := FileMgt.GetFileName(FromFile);
             this.SheetName := this.TempExcelBuffer.SelectSheetsNameStream(IStream);
