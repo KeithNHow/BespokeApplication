@@ -92,7 +92,7 @@ report 69000 KNHSalesInvoiceImport
             this.SalesHeader.Validate("Due Date");
             Evaluate(this.SalesHeader."Shortcut Dimension 1 Code", this.GetValueAtCell(ColumnNo, 1));
             Evaluate(this.SalesHeader."External Document No.", this.GetValueAtCell(ColumnNo, 8));
-            if this.GetValueAtCell(ColumnNo, 11) <> '' then begin
+            if this.GetValueAtCell(ColumnNo, 10) <> '' then begin
                 Evaluate(this.SalesHeader."Gen. Bus. Posting Group", this.GetValueAtCell(ColumnNo, 10));
                 this.SalesHeader.Validate("Gen. Bus. Posting Group");
             end;
@@ -110,15 +110,15 @@ report 69000 KNHSalesInvoiceImport
             Evaluate(this.SalesLine.Description, this.GetValueAtCell(ColumnNo, 3));
             this.SalesLine.Validate(Description);
         end;
-        if this.GetValueAtCell(ColumnNo, 11) <> '' then begin
+        if this.GetValueAtCell(ColumnNo, 10) <> '' then begin
             Evaluate(this.SalesLine."Gen. Bus. Posting Group", this.GetValueAtCell(ColumnNo, 10));
             this.SalesLine.Validate("Gen. Bus. Posting Group");
         end;
-        if this.GetValueAtCell(ColumnNo, 12) <> '' then begin
+        if this.GetValueAtCell(ColumnNo, 11) <> '' then begin
             Evaluate(this.SalesLine."Gen. Prod. Posting Group", this.GetValueAtCell(ColumnNo, 11));
             this.SalesLine.Validate("Gen. Prod. Posting Group");
         end;
-        if this.GetValueAtCell(ColumnNo, 10) <> '' then begin
+        if this.GetValueAtCell(ColumnNo, 12) <> '' then begin
             Evaluate(this.SalesLine."VAT Prod. Posting Group", this.GetValueAtCell(ColumnNo, 12));
             this.SalesLine.Validate("VAT Prod. Posting Group");
         end;

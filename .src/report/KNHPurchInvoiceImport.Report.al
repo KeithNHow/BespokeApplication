@@ -92,7 +92,7 @@ report 69002 KNHPurchInvoiceImport
             this.PurchHeader.Validate("Due Date");
             Evaluate(this.PurchHeader."Shortcut Dimension 1 Code", this.GetValueAtCell(ColumnNo, 1));
             Evaluate(this.PurchHeader."Vendor Invoice No.", this.GetValueAtCell(ColumnNo, 8));
-            if this.GetValueAtCell(ColumnNo, 11) <> '' then begin
+            if this.GetValueAtCell(ColumnNo, 10) <> '' then begin
                 Evaluate(this.PurchHeader."Gen. Bus. Posting Group", this.GetValueAtCell(ColumnNo, 10));
                 this.PurchHeader.Validate("Gen. Bus. Posting Group");
             end;
@@ -110,15 +110,15 @@ report 69002 KNHPurchInvoiceImport
             Evaluate(this.PurchLine.Description, this.GetValueAtCell(ColumnNo, 3));
             this.PurchLine.Validate(Description);
         end;
-        if this.GetValueAtCell(ColumnNo, 11) <> '' then begin
+        if this.GetValueAtCell(ColumnNo, 10) <> '' then begin
             Evaluate(this.PurchLine."Gen. Bus. Posting Group", this.GetValueAtCell(ColumnNo, 10));
             this.PurchLine.Validate("Gen. Bus. Posting Group");
         end;
-        if this.GetValueAtCell(ColumnNo, 12) <> '' then begin
+        if this.GetValueAtCell(ColumnNo, 11) <> '' then begin
             Evaluate(this.PurchLine."Gen. Prod. Posting Group", this.GetValueAtCell(ColumnNo, 11));
             this.PurchLine.Validate("Gen. Prod. Posting Group");
         end;
-        if this.GetValueAtCell(ColumnNo, 10) <> '' then begin
+        if this.GetValueAtCell(ColumnNo, 12) <> '' then begin
             Evaluate(this.PurchLine."VAT Prod. Posting Group", this.GetValueAtCell(ColumnNo, 12));
             this.PurchLine.Validate("VAT Prod. Posting Group");
         end;
