@@ -10,7 +10,7 @@ report 69002 KNHPurchInvoiceImport
         The excel file should be in a specific format, and the first row is header. 
     */
     ApplicationArea = All;
-    Caption = 'Germany Purch Invoice Import';
+    Caption = 'Purchase Invoice Import';
     UsageCategory = ReportsAndAnalysis;
     ProcessingOnly = true;
     UseRequestPage = false;
