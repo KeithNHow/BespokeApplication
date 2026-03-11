@@ -35,7 +35,7 @@
         "RemoveUnusedVariables"
     ],
     "workbench.editor.enablePreview": true, //Prevents unedited files from remaining open
-    "CRS.ObjectNamePrefix": "SMP",
+    "CRS.ObjectNamePrefix": "KNH",
     "CRS.FileNamePattern": "<ObjectName>.<ObjectTypeShortPascalCase>.al",
     "CRS.FileNamePatternExtensions": "<ObjectName>.<ObjectTypeShortPascalCase>.al",
     "CRS.FileNamePatternPageCustomizations": "<ObjectName>.<ObjectTypeShortPascalCase>.al",
