@@ -1,6 +1,6 @@
 namespace KNHBespoke;
-using System.IO;
 using Microsoft.Sales.Document;
+using System.IO;
 
 report 69000 KNHSalesInvoiceImport
 {

@@ -1,3 +1,5 @@
+namespace KNHBespoke;
+
 permissionset 69000 KNHBespoke
 {
     Assignable = true;

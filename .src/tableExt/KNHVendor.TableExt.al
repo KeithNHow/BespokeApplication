@@ -1,6 +1,6 @@
 namespace KNHBespoke;
-using Microsoft.Purchases.Vendor;
 using Microsoft.Foundation.Comment;
+using Microsoft.Purchases.Vendor;
 
 tableextension 69001 KNHVendor extends Vendor
 {

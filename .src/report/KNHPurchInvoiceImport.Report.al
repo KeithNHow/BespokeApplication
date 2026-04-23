@@ -1,6 +1,6 @@
 namespace KNHBespoke;
-using System.IO;
 using Microsoft.Purchases.Document;
+using System.IO;
 
 report 69002 KNHPurchInvoiceImport
 {
