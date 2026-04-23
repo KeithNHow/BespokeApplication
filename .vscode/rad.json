@@ -1,1 +1,1 @@
-﻿{"Added":[],"Modified":[],"Removed":[]}
+﻿{"Added":[],"Modified":[{"Id":69002,"Kind":13,"Name":"KNHPurchInvoiceImport","Namespace":"KNHBespoke"},{"Id":69000,"Kind":13,"Name":"KNHSalesInvoiceImport","Namespace":"KNHBespoke"},{"Id":69000,"Kind":26,"Name":"KNHBespoke","Namespace":""},{"Id":69001,"Kind":17,"Name":"KNHVendor","Namespace":"KNHBespoke"}],"Removed":[]}
